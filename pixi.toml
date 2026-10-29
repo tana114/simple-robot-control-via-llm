@@ -1,0 +1,13 @@
+[workspace]
+channels = ["conda-forge"]
+name = "pai26_adv_02"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+openai = ">=3.40.0,<4"
+pyyaml = ">=6.0.3,<7"
+python = "3.12.*"
+numpy = ">=2.5.4,<3"
