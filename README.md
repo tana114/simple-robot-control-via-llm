@@ -21,6 +21,8 @@
 2. 左に0.3 rad/sで2秒間旋回  
 3. 停止  
 
+[![紹介動画](https://github.com/user-attachments/assets/6e838542-f626-4de9-93cd-252189e7035c)](https://youtu.be/tjSswEXSGJ8)
+
 ## 2. 実行環境  
 
 本検証では、Windows 11上のLM StudioでLLMを実行し、WSL上のUbuntu 24.04からAPI経由で利用した。  
