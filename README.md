@@ -28,14 +28,14 @@
 | 項目 | 使用環境・ソフトウェア | 役割 |  
 |---|---|---|  
 | ホストOS | Windows 11 | LM StudioおよびWSLの実行 |  
-| Linux実行基盤 | WSL | Ubuntuの実行 |  
-| Linux OS | Ubuntu 24.04 | ROS 2および制御プログラムの実行 |  
+| Linux実行基盤 | WSL 3.0.3.0 | Ubuntuの実行 |  
+| Linux OS | Ubuntu 24.04.5 LTS | ROS 2および制御プログラムの実行 |  
 | ROS | ROS 2 Jazzy | ロボット制御と速度指令の送信 |  
-| LLM実行ソフトウェア | LM Studio | LLMの読み込みとAPIサーバーの提供 |  
-| LLMモデル | Ornith1.5-9B | 自然言語指示から動作列JSONを生成 |  
+| LLM実行ソフトウェア | LM Studio 0.4.26 | LLMの読み込みとAPIサーバーの提供 |  
+| LLMモデル | Ornith1.5-9B-Q4_K_M | 自然言語指示から動作列JSONを生成 |  
 | 制御プログラム | `controller.py` | 入力受付、LLM通信、検証、順次実行 |  
 | プロンプトファイル | `prompt.txt` | LLMへの変換ルールの指定 |  
-| シミュレーション | Gazebo／TurtleBot3 | 生成した指令による動作確認 |  
+| シミュレーション | Gazebo 8.15.0／TurtleBot3 | 生成した指令による動作確認 |  
 
 
 
@@ -67,7 +67,7 @@ Windows 11
                     └── controller.pyから速度指令を受信  
 ```  
   
-LLMの推論はWindows側、JSONの検証とロボット制御はUbuntu側で実行する。Ubuntu側でLLMモデルを読み込む構成ではない。  
+LLMの推論はWindows側、JSONの検証とロボット制御はUbuntu側で実行する。  
 
 #### 手続きの流れ  
 ```text  

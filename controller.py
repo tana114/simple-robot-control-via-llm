@@ -28,7 +28,7 @@ MAX_TOTAL_DURATION_SEC = 120.0
 # ROS速度指令の送信周期  
 PUBLISH_PERIOD_SEC = 0.1  
   
-# API・モデルが対応している場合にTrueへ変更できます。  
+# API・モデルが対応している場合に True へ変更できます。  
 # 未対応の場合はFalseのまま使用してください。  
 USE_JSON_RESPONSE_FORMAT = False  
   
